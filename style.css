@@ -9,6 +9,7 @@ ul {
     overflow: hidden;
     border: 1px solid #e7e7e7;
     background-color: #bde2b5;
+    font-size: 20px;
 }
 
 li {
@@ -25,13 +26,24 @@ li a {
 
 li a:hover:not(.active) {
     background-color: #fff;
+    text-decoration: underline;
 }
 
 li a.active {
     color: white;
     background-color:#5a7056;
+    text-decoration: underline;
 }
  .trackDisplay{
         border: 2px solid black;
-        margin: 1px 1px 1px 1px;
+        margin: 10px 10px 10px 10px;
+        padding: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
 }
