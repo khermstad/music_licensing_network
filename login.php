@@ -43,7 +43,7 @@ endif;
 <?php endif; ?>
 
  <h1>Login</h1>
- 
+
 <form action="login.php" method="POST">
 <fieldset>
 	<legend>Login Information:</legend>
