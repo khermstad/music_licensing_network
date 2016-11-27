@@ -80,7 +80,7 @@
           echo "</br>Status: APPROVED";
           echo '<form action="delete_track.php" method="POST">';
           echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-          echo "<button type='submit'>DELETE TRACK</button>";
+          echo "<button class='delete_button' type='submit'>DELETE TRACK</button>";
           echo "</form>";
 
           echo "</div></br>";
@@ -218,16 +218,16 @@
                 echo "</br>Status: APPROVED";
                 echo '<form action="pending.php" method="POST">';
                 echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-                echo "<button type='submit'>SET PENDING</button>";
+                echo "<button class='pending_button' type='submit'>SET PENDING</button>";
                 echo "</form>";
                 echo '<form action="reject.php" method="POST">';
                 echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-                echo "<button type='submit'>REJECT</button>";
+                echo "<button class='reject_button' type='submit'>REJECT</button>";
                 echo "</form>";
 
                 echo '<form action="delete_track.php" method="POST">';
                 echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-                echo "<button type='submit'>DELETE TRACK</button>";
+                echo "<button class='delete_button' type='submit'>DELETE TRACK</button>";
                 echo "</form>";
 
 
@@ -248,16 +248,16 @@
                 echo "</br>Status: PENDING";
                 echo '<form action="approve.php" method="POST">';
                 echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-                echo "<button type='submit'>APPROVE</button>";
+                echo "<button class='approve_button' type='submit'>APPROVE</button>";
                 echo "</form>";
                 echo '<form action="reject.php" method="POST">';
                 echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-                echo "<button type='submit'>REJECT</button>";
+                echo "<button class='reject_button' type='submit'>REJECT</button>";
                 echo "</form>";
 
                 echo '<form action="delete_track.php" method="POST">';
                 echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-                echo "<button type='submit'>DELETE TRACK</button>";
+                echo "<button class='delete_button' type='submit'>DELETE TRACK</button>";
                 echo "</form>";
 
 
@@ -278,15 +278,15 @@
                 echo "</br>Status: REJECTED";
                 echo '<form action="pending.php" method="POST">';
                 echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-                echo "<button type='submit'>SET PENDING</button>";
+                echo "<button class='pending_button' type='submit'>SET PENDING</button>";
                 echo "</form>";
                 echo '<form action="approve.php" method="POST">';
                 echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-                echo "<button type='submit'>APPROVE</button>";
+                echo "<button class='approve_button' type='submit'>APPROVE</button>";
                 echo "</form>";
                 echo '<form action="delete_track.php" method="POST">';
                 echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-                echo "<button type='submit'>DELETE TRACK</button>";
+                echo "<button  class='delete_button' type='submit'>DELETE TRACK</button>";
                 echo "</form>";
 
                 echo "</div></br>";

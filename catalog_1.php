@@ -52,7 +52,7 @@
         echo '<input type="text" value="'.$row['track_title'].'" name="trackTitle" hidden>';
         echo '<input type="text" value="'.$row['price'].'" name="trackPrice" hidden>';
         echo '<input type="text" value="'.$row['username'].'" name="trackUser" hidden>';
-        echo "<button type='submit'>Buy License</button>";
+        echo "<button type='submit' class='buy_button'>Buy License</button>";
         echo "</form>";
         echo "</div></br>";
       }

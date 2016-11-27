@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 $message = '';
 $radio_value = $_POST['customerType'];
@@ -7,7 +7,7 @@ require 'database.php';
 /*if( isset($_SESSION['user_id']) ){
   header("Location: /mln");
 }*/
-if(!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['username'])): 
+if(!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['username'])):
 //enter new user in the database
 
 $sql = "INSERT INTO users (username, email, password, isArtist) VALUES (:username, :email, :password, :isArtist)";
@@ -19,7 +19,7 @@ $stmt->bindParam(':isArtist', ($radio_value));
 
 if($stmt->execute() ):
    $message = 'Successfully created new user';
-   
+
 else:
   $message = 'Sorry there seems to be an error creating your account';
 endif;
@@ -44,7 +44,7 @@ endif;
 <p><?= $message ?></p>
 <?php endif; ?>
  <h1>Register</h1>
-  
+
 <form action="register.php" method="POST">
 	<fieldset>
 	 <legend>Personal Information:</legend>
@@ -63,7 +63,7 @@ endif;
 <input type="radio" name="customerType" value="1">Artist<br>
 <input type="radio" name="customerType" value="0">Customer<br>
 <br>
-<input type="submit">
+<input class='approve_button' type="submit">
 </fieldset>
 </form>
  </body>

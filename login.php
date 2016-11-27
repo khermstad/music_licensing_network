@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 require 'database.php';
 if( isset($_SESSION['user_id']) ){
@@ -53,7 +53,7 @@ endif;
     Password:<br>
 <input type="password" placeholder="and password" name="password">
 <br><br>
-<input type="submit">
+<input class='approve_button' type="submit">
 </fieldset>
 </form>
 
