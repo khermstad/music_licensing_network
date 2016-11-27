@@ -1,3 +1,7 @@
+body{
+  font-family: monospace;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -28,4 +32,5 @@ li a.active {
     background-color:blue;
 }
  .trackDisplay{
-        border: 2px solid black;      }
+        border: 2px solid black;
+}
