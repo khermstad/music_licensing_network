@@ -39,7 +39,7 @@ $valid_upload = true;
     <li><a href="user_portal.php">My Portal</a><li>
   </ul>
   </div>
-
+  <div class='trackDisplay'>
   <?php
 
 // check file size. if greater than 5mb, set false;
@@ -81,5 +81,6 @@ else{
 }
 
 ?>
+</div>
 </body>
 </html>
