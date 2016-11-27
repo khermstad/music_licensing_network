@@ -1,0 +1,64 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #00FFFF;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #fff;
+}
+
+li a.active {
+    color: white;
+    background-color:blue;
+}
+</style>
+
+</head>
+<body>
+  <div id='navBar'>
+  <ul>
+    <li><a class="active" href="#home">MLN</a></li>
+    <li><a href="index.php">Home</a><li>
+    <li><a href="catalog_1.php">Catalog</a></li>
+    <li><a href="register.php">Register</a></li>
+    <li><a href="login.php">Login</a></li>
+    <li><a href="logout.php">Logout</a></li>
+    <li><a href="user_portal.php">My Portal</a><li>
+  </ul>
+  </div>
+
+  <form action="login.php" method="POST">
+  <fieldset>
+  	<legend>Login Information:</legend>
+  	Email:<br>
+  <input type="text" placeholder="Enter your email" name="email">
+  <br>
+      Password:<br>
+  <input type="password" placeholder="and password" name="password">
+  <br><br>
+  <input type="submit">
+  </fieldset>
+  </form>
+</body>
+<html>
