@@ -8,7 +8,7 @@ ul {
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
-    background-color: #00FFFF;
+    background-color: #bde2b5;
 }
 
 li {
@@ -29,8 +29,9 @@ li a:hover:not(.active) {
 
 li a.active {
     color: white;
-    background-color:blue;
+    background-color:#5a7056;
 }
  .trackDisplay{
         border: 2px solid black;
+        margin: 1px 1px 1px 1px;
 }
