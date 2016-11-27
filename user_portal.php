@@ -99,7 +99,7 @@
           echo "</br>Status: PENDING";
           echo '<form action="delete_track.php" method="POST">';
           echo '<input type="text" value="'.$row['id'].'" name="trackId" hidden>';
-          echo "<button type='submit'>DELETE TRACK</button>";
+          echo "<button class='delete_button' type='submit'>DELETE TRACK</button>";
           echo "</form>";
           echo "</div></br>";
         }
